@@ -18,6 +18,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fc425ed605f22993",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.3"
+              }
+            }
           }
         ]
       }
@@ -48,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "decim",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +75,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -157,7 +168,7 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "16a131879adb383c",
+  "active": "f7c5feddc8b347a5",
   "lastOpenFiles": [
     "Untitled.md",
     "Django/Url Dinamicas.md",

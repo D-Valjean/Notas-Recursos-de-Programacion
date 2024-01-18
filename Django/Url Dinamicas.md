@@ -11,5 +11,5 @@ Al final de declarar las urls en *urlpatterns* , las agragamos a nuestra variabl
 ![[Pasted image 20231222163642.png]] 
 Modo Automatico
 
-De esta forma, tenemos una lista de todas nuestras dirrecciones, la cual podemos llamar en nuestra vistas por la funcion get_context_data
+De esta forma, tenemos una lista de todas nuestras dirrecciones, la cual podemos llamar en nuestra vistas por la funcion get_context_data https://10.10.45.19:8006/#v1:0:=lxc%2F100:4:::::8::
 ![[Pasted image 20231222132309.png]]
