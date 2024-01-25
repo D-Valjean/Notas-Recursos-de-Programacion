@@ -4,18 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "91e15034f6f854bf",
+        "id": "8a48caa198909a13",
         "type": "tabs",
         "children": [
           {
-            "id": "91498039011defca",
+            "id": "4dd4fbf9c49a82f9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Debian/Webmi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4e3edaaee20ccfd3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Debian/How to Install Django on Debian Linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "58722e507c83f2c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "How to fix debian sudo command not found.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "07f6956670991c9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Debian/Ejecutar Bash.script.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -81,6 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Debian/Ejecutar Bash.script.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Debian/Ejecutar Bash.script.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +161,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Debian/Ejecutar Bash.script.md"
+              }
             }
           },
           {
@@ -149,12 +194,19 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "91498039011defca",
+  "active": "defb280b8a46658a",
   "lastOpenFiles": [
+    "How to fix debian sudo command not found.md",
+    "Debian/Ejecutar Bash.script.md",
+    "img/download.svg",
+    "Debian/How to Install Django on Debian Linux.md",
+    "Debian/Webmi.md",
+    "Debian/Nota.md",
     "RECURSOS.md",
+    "Debian",
     "Django/modelos de musicos autoincrement.md",
-    "Django/COMANDOS PARA LINUX.md",
     "Django/Url Dinamicas.md",
+    "Django/COMANDOS PARA LINUX.md",
     "README.md",
     "img",
     "Django",
