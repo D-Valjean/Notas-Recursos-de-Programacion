@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "How to fix debian sudo command not found.md",
+                "file": "Debian/How to fix debian sudo command not found.md",
                 "mode": "preview",
                 "source": false
               }
@@ -49,14 +49,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Debian/Ejecutar Bash.script.md",
+                "file": "Debian/Nota.md",
                 "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a9d3caa733e678cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Debian/Webmi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17e71b918449443b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Debian/Webmi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "59a96cde1fe60ec2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "How to Fix ifconfig Command Not Found.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8efa4cc5456b6b0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Debian/Webmi.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -122,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Debian/Ejecutar Bash.script.md",
+                "file": "Debian/Webmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Debian/Ejecutar Bash.script.md",
+                "file": "Debian/Webmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Debian/Ejecutar Bash.script.md"
+                "file": "Debian/Webmi.md"
               }
             }
           },
@@ -194,20 +242,24 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "defb280b8a46658a",
+  "active": "8efa4cc5456b6b0f",
   "lastOpenFiles": [
-    "How to fix debian sudo command not found.md",
+    "How to static IP address on Debian Linux.md",
+    "How to Fix ifconfig Command Not Found.md",
+    "Debian/Webmi.md",
+    "Debian/debian curl not found.md",
+    "Debian/Nota.md",
+    "README.md",
+    "RECURSOS.md",
+    "Debian/How to fix debian sudo command not found.md",
+    "Debian/How to Install Django on Debian Linux.md",
+    "Debian/debian sudo command not found.md",
     "Debian/Ejecutar Bash.script.md",
     "img/download.svg",
-    "Debian/How to Install Django on Debian Linux.md",
-    "Debian/Webmi.md",
-    "Debian/Nota.md",
-    "RECURSOS.md",
     "Debian",
     "Django/modelos de musicos autoincrement.md",
     "Django/Url Dinamicas.md",
     "Django/COMANDOS PARA LINUX.md",
-    "README.md",
     "img",
     "Django",
     "img/Pasted image 20231222163642.png",
