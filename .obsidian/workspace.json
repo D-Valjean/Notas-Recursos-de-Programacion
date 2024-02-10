@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Django/COMANDOS PARA LINUX.md",
+                "file": "Debian/Webmi.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "53b95c23bbd14fc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Proxmox/Hot tip.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ef07fd0800ae4908",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Django/COMANDOS PARA LINUX.md",
+                "file": "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Django/COMANDOS PARA LINUX.md",
+                "file": "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Django/COMANDOS PARA LINUX.md"
+                "file": "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md"
               }
             }
           },
@@ -157,19 +182,22 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "5c1bb0196a59325b",
+  "active": "defb280b8a46658a",
   "lastOpenFiles": [
-    "cannot load library pango debian.md",
-    "Django/COMANDOS PARA LINUX.md",
-    "Debian/debian sudo command not found.md",
+    "Proxmox/Hot tip.md",
+    "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md",
+    "Proxmox",
     "Debian/Webmi.md",
+    "Debian/debian curl not found.md",
+    "Debian/How to static IP address on Debian Linux.md",
+    "Debian/How to fix debian sudo command not found.md",
+    "Debian/How to Fix ifconfig Command Not Found.md",
+    "Debian/debian sudo command not found.md",
+    "Debian/cannot load library pango debian.md",
+    "VMbox.md",
+    "Django/COMANDOS PARA LINUX.md",
     "Debian/Nota.md",
     "Debian/How to Install Django on Debian Linux.md",
-    "Debian/How to static IP address on Debian Linux.md",
-    "Debian/debian curl not found.md",
-    "Debian/How to Fix ifconfig Command Not Found.md",
-    "VMbox.md",
-    "Debian/How to fix debian sudo command not found.md",
     "RECURSOS.md",
     "README.md",
     "Debian/Ejecutar Bash.script.md",
