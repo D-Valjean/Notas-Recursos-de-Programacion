@@ -42,9 +42,31 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5fdac87ce8a9e3a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Debian/Nota.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "39da5b01c277d5a9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md",
+                "file": "Debian/Nota.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md",
+                "file": "Debian/Nota.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md"
+                "file": "Debian/Nota.md"
               }
             }
           },
@@ -182,24 +204,25 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "defb280b8a46658a",
+  "active": "39da5b01c277d5a9",
   "lastOpenFiles": [
-    "Proxmox/Hot tip.md",
+    "Django/COMANDOS PARA LINUX.md",
+    "VMbox.md",
+    "RECURSOS.md",
+    "README.md",
+    "Django/Exportacion masiva.md",
     "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md",
-    "Proxmox",
     "Debian/Webmi.md",
+    "Proxmox/Hot tip.md",
+    "Proxmox",
     "Debian/debian curl not found.md",
     "Debian/How to static IP address on Debian Linux.md",
     "Debian/How to fix debian sudo command not found.md",
     "Debian/How to Fix ifconfig Command Not Found.md",
     "Debian/debian sudo command not found.md",
     "Debian/cannot load library pango debian.md",
-    "VMbox.md",
-    "Django/COMANDOS PARA LINUX.md",
     "Debian/Nota.md",
     "Debian/How to Install Django on Debian Linux.md",
-    "RECURSOS.md",
-    "README.md",
     "Debian/Ejecutar Bash.script.md",
     "img/download.svg",
     "Debian",
