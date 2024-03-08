@@ -37,36 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5fdac87ce8a9e3a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Debian/Nota.md",
+                "file": "Debian/Webmi.md",
                 "mode": "preview",
                 "source": false
               }
             }
           },
           {
-            "id": "39da5b01c277d5a9",
+            "id": "04d7a976f517a399",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.5.8"
+                "file": "Debian/cannot load library pango debian.md",
+                "mode": "preview",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -95,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "decim",
+                "query": "zip",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Debian/Nota.md",
+                "file": "Debian/cannot load library pango debian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Debian/Nota.md",
+                "file": "Debian/cannot load library pango debian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Debian/Nota.md"
+                "file": "Debian/cannot load library pango debian.md"
               }
             }
           },
@@ -204,15 +194,21 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "39da5b01c277d5a9",
+  "active": "04d7a976f517a399",
   "lastOpenFiles": [
+    "Django/Url Dinamicas.md",
+    "Django/modelos de musicos autoincrement.md",
     "Django/COMANDOS PARA LINUX.md",
+    "Django/Exportacion masiva.md",
+    "Django/pythonanywhere/How to download a folder.md",
+    "Django/pythonanywhere/Disk Quota.md",
+    "Debian/Webmi.md",
+    "Django/pythonanywhere",
     "VMbox.md",
     "RECURSOS.md",
-    "README.md",
-    "Django/Exportacion masiva.md",
     "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md",
-    "Debian/Webmi.md",
+    "Debian/Nota.md",
+    "README.md",
     "Proxmox/Hot tip.md",
     "Proxmox",
     "Debian/debian curl not found.md",
@@ -221,13 +217,10 @@
     "Debian/How to Fix ifconfig Command Not Found.md",
     "Debian/debian sudo command not found.md",
     "Debian/cannot load library pango debian.md",
-    "Debian/Nota.md",
     "Debian/How to Install Django on Debian Linux.md",
     "Debian/Ejecutar Bash.script.md",
     "img/download.svg",
     "Debian",
-    "Django/modelos de musicos autoincrement.md",
-    "Django/Url Dinamicas.md",
     "img",
     "Django",
     "img/Pasted image 20231222163642.png",

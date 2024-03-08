@@ -10,3 +10,28 @@ También puedes limitar el ámbito de los datos exportados especificando nombres
 Para importar los datos del archivo JSON a la nueva base de datos en Django, puedes utilizar el comando loaddata. Aquí tienes un ejemplo de cómo hacerlo:
 
 	python manage.py loaddata datos.json
+
+
+
+## Si se presenta error al migrar
+in your local database you create some ContentType instances.
+
+when you migrate your remote database all ContentType for your models created again.
+
+but when you want to load data you try to load this instances again.
+
+you have 2 solutions
+
+1- remove all content types instances from remote host using django shell:
+
+```python
+python manage.py shell
+
+>>> from django.contrib.contenttypes.models import ContentType
+>>> ContentType.objects.all().delete()
+```
+2- remove content type instances from dumped data
+
+```python
+python manage.py dumpdata --exclude contenttypes
+```
