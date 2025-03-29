@@ -29,10 +29,6 @@
 	chmod 600 ~/.passwd-s3fs
 	
 ### 3. Montar el bucket R2
-
-	bash
-	
-	Copy
 	
 	s3fs tu-nombre-bucket /mnt/r2 \
 	-o url=https://[TU_ACCOUNT_ID].r2.cloudflarestorage.com \
@@ -84,10 +80,6 @@ tail -f /var/log/syslog | grep s3fs
         
     - Ejemplo válido:
         
-        text
-        
-        Copy
-        
         ACCESS_KEY:SECRET_KEY
         
 2. **Asegurar permisos correctos:**
@@ -119,19 +111,12 @@ tail -f /var/log/syslog | grep s3fs
 
 #### a) **Forzar el uso del archivo de credenciales:**
 
-bash
-
-Copy
 
 s3fs tu-bucket-r2 /mnt/r2 -o passwd_file=~/.passwd-s3fs \
 -o url=https://[ACCOUNT_ID].r2.cloudflarestorage.com \
 -o sigv4
 
 #### b) **Verificar conexión con AWS CLI:**
-
-bash
-
-Copy
 
 AWS_ACCESS_KEY_ID="{AWS_ACCESS_KEY_ID}" \
 AWS_SECRET_ACCESS_KEY="{AWS_SECRET_ACCESS_KEY}" \
@@ -152,18 +137,12 @@ unset AWS_SECRET_ACCESS_KEY
 
 1. **Agregar parámetros de firma V4:**
     
-    bash
-    
-    Copy
     
     -o sigv4 \
     -o endpoint=auto \
     
 2. **Ejemplo completo funcionando:**
     
-    bash
-    
-    Copy
     
     s3fs mi-bucket /mnt/r2 \
     -o passwd_file=~/.passwd-s3fs \
@@ -181,9 +160,6 @@ unset AWS_SECRET_ACCESS_KEY
 
 1. **Habilitar logs detallados:**
     
-    bash
-    
-    Copy
     
     s3fs tu-bucket /mnt/r2 -o dbglevel=debug -f -o curldbg 2>&1 | tee /tmp/s3fs.log
     
@@ -203,3 +179,7 @@ unset AWS_SECRET_ACCESS_KEY
 - **Regenera tus claves R2** si las has expuesto públicamente (Cloudflare Dashboard → R2 → Manage API Tokens).
     
 - Usa **/mnt/r2** como punto de montaje vacío (no debe contener archivos antes de montar).
+
+
+
+Comando para Iniciar : sudo s3fs dgautos /mnt/r2 -o passwd_file=~/.passwd-s3fs -o url=https://0c71cf4f9f195c1ba9744423b8400675.r2.cloudflarestorage.com -o use_path_request_style -o allow_other -o umask=022 -o dbglevel=info -f -o curldbg
