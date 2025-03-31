@@ -182,4 +182,4 @@ unset AWS_SECRET_ACCESS_KEY
 
 
 
-Comando para Iniciar : sudo s3fs dgautos /mnt/r2 -o passwd_file=~/.passwd-s3fs -o url=https://[ACCOUNT_ID].r2.cloudflarestorage.com -o use_path_request_style -o allow_other -o umask=022 -o dbglevel=info -f -o curldbg
+Comando para Iniciar : sudo s3fs bucket-name /mnt/r2 -o passwd_file=~/.passwd-s3fs -o url=https://[ACCOUNT_ID].r2.cloudflarestorage.com -o use_path_request_style -o allow_other -o umask=022 -o dbglevel=info -f -o curldbg
