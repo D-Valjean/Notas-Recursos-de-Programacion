@@ -16,7 +16,9 @@
                 "file": "Debian/Webmi.md",
                 "mode": "preview",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Webmi"
             }
           },
           {
@@ -28,7 +30,9 @@
                 "file": "Proxmox/Hot tip.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Hot tip"
             }
           },
           {
@@ -40,7 +44,9 @@
                 "file": "Debian/Webmi.md",
                 "mode": "preview",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Webmi"
             }
           },
           {
@@ -52,11 +58,103 @@
                 "file": "Debian/cannot load library pango debian.md",
                 "mode": "preview",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "cannot load library pango debian"
+            }
+          },
+          {
+            "id": "ec8b2f3736131d11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Scripts/curl_date.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "curl_date"
+            }
+          },
+          {
+            "id": "7c66ca39224eb5f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pdf Python 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Pdf Python 1"
+            }
+          },
+          {
+            "id": "011761f916014504",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.4"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.4"
+            }
+          },
+          {
+            "id": "2b5b3ae74e41ce8a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.7.7"
+            }
+          },
+          {
+            "id": "0c99424ebdd244c0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
+            }
+          },
+          {
+            "id": "58f32ad71bfa527f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SEM.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SEM"
+            }
+          },
+          {
+            "id": "d46d92968c34ffb9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -75,8 +173,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -91,7 +192,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -99,7 +202,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -122,7 +227,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Debian/cannot load library pango debian.md",
+                "file": "Debian/Webmi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +235,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Webmi"
             }
           },
           {
@@ -139,10 +246,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Debian/cannot load library pango debian.md",
+                "file": "Debian/Webmi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Webmi"
             }
           },
           {
@@ -153,7 +262,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -162,8 +273,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Debian/cannot load library pango debian.md"
-              }
+                "file": "Debian/Webmi.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Webmi"
             }
           },
           {
@@ -171,7 +284,9 @@
             "type": "leaf",
             "state": {
               "type": "todo",
-              "state": {}
+              "state": {},
+              "icon": "checkmark",
+              "title": "Todo List"
             }
           }
         ],
@@ -194,18 +309,31 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "04d7a976f517a399",
+  "active": "d46d92968c34ffb9",
   "lastOpenFiles": [
+    "SEM.md",
+    "Media/download.svg",
+    "Pdf Python 1.md",
+    "Untitled.md",
+    "Django/Identificar el error cuando no se cumple la condicion.md",
+    "Django/Exportacion masiva.md",
+    "Django/crontab.md",
+    "Django/pythonanywhere/Disk Quota.md",
+    "Django/pythonanywhere/How to download a folder.md",
+    "RECURSOS.md",
+    "Debian/Webmi.md",
+    "Media/Pasted image 20231222163642.png",
+    "Media/Pasted image 20231222162443.png",
+    "Media/Pasted image 20231222155219.png",
+    "Media/Pasted image 20231222154622.png",
+    "Media/Pasted image 20231222132309.png",
+    "Media/Pasted image 20240506111738.png",
+    "Scripts/curl_date.md",
+    "VMbox.md",
     "Django/Url Dinamicas.md",
     "Django/modelos de musicos autoincrement.md",
     "Django/COMANDOS PARA LINUX.md",
-    "Django/Exportacion masiva.md",
-    "Django/pythonanywhere/How to download a folder.md",
-    "Django/pythonanywhere/Disk Quota.md",
-    "Debian/Webmi.md",
     "Django/pythonanywhere",
-    "VMbox.md",
-    "RECURSOS.md",
     "Proxmox/KVM virtualisation configured, but not available Either disable in VM configuration or enable in BIOS.md",
     "Debian/Nota.md",
     "README.md",
@@ -218,15 +346,8 @@
     "Debian/debian sudo command not found.md",
     "Debian/cannot load library pango debian.md",
     "Debian/How to Install Django on Debian Linux.md",
-    "Debian/Ejecutar Bash.script.md",
-    "img/download.svg",
     "Debian",
-    "img",
-    "Django",
-    "img/Pasted image 20231222163642.png",
-    "img/Pasted image 20231222162443.png",
-    "img/Pasted image 20231222155219.png",
-    "img/Pasted image 20231222154622.png",
-    "img/Pasted image 20231222132309.png"
+    "Media",
+    "Django"
   ]
 }
