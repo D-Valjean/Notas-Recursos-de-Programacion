@@ -1,0 +1,20 @@
+# 1. Listar contenedores para ver ID
+pct list
+
+# 2. Parar el contenedor (si está corriendo)
+pct stop <ID>
+# Ejemplo: pct stop 101
+
+# 3. Eliminar contenedor
+pct destroy <ID>
+# Ejemplo: pct destroy 101
+
+Opciones avanzadas:
+# Eliminar forzadamente (si está bloqueado)
+pct destroy <ID> --force
+
+# Eliminar incluyendo snapshots
+pct destroy <ID> --destroy-unreferenced-disks
+
+# Verificar antes de eliminar (qué se borrará)
+pct destroy <ID> --dry-run
