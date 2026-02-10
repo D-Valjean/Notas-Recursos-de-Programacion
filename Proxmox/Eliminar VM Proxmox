@@ -1,0 +1,27 @@
+# 1. Listar VMs para ver ID
+qm list
+
+# 2. Parar la VM (si está corriendo)
+qm stop <VMID>
+# Ejemplo: qm stop 200
+
+# 3. Eliminar la VM (esto solo elimina la configuración)
+qm destroy <VMID>
+# Ejemplo: qm destroy 200
+
+# Para eliminar incluyendo discos virtuales:
+qm destroy <VMID> --purge
+
+
+Opciones Avanzadas
+# Eliminar VM y todos los discos asociados
+qm destroy <VMID> --destroy-unreferenced-disks
+
+# Eliminar incluso si está bloqueada
+qm destroy <VMID> --force
+
+# Solo eliminar configuración (mantener discos)
+qm destroy <VMID> --keepstorage
+
+# Ver qué se eliminará (simulación)
+qm destroy <VMID> --dry-run
