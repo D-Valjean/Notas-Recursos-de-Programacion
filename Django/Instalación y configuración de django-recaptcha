@@ -1,0 +1,137 @@
+# instalar paquete
+  pip install django-recaptcha
+  pip install django-ratelimit
+
+# Agrega a INSTALLED_APPS en settings.py:
+  INSTALLED_APPS = [
+      ...
+      'django_recaptcha',
+  ]
+
+# Obtén tus claves de reCAPTCHA:
+  Ve a Google reCAPTCHA
+  
+  Registra tu dominio (para desarrollo local puedes usar localhost o 127.0.0.1)
+  
+  Elige reCAPTCHA v2 ("No soy un robot")
+  
+  Copia las claves pública y privada
+
+# En settings.py agrega:
+# Google reCAPTCHA
+  RECAPTCHA_PUBLIC_KEY = 'tu_clave_publica'
+  RECAPTCHA_PRIVATE_KEY = 'tu_clave_privada'
+
+# Crear un formulario de registro con reCAPTCHA
+  from django import forms
+  from django.contrib.auth.models import User
+  from django_recaptcha.fields import ReCaptchaField
+  
+  class RegistroForm(forms.Form):
+      username = forms.CharField(
+          max_length=150,
+          widget=forms.TextInput(attrs={
+              'class': 'appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm',
+              'placeholder': 'Nombre de usuario'
+          })
+      )
+      email = forms.EmailField(
+          widget=forms.EmailInput(attrs={
+              'class': 'appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm',
+              'placeholder': 'Correo electrónico'
+          })
+      )
+      password1 = forms.CharField(
+          label='Contraseña',
+          widget=forms.PasswordInput(attrs={
+              'class': 'appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm',
+              'placeholder': 'Contraseña'
+          })
+      )
+      password2 = forms.CharField(
+          label='Confirmar contraseña',
+          widget=forms.PasswordInput(attrs={
+              'class': 'appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm',
+              'placeholder': 'Confirmar contraseña'
+          })
+      )
+      captcha = ReCaptchaField()
+  
+      # Campo honeypot (opcional pero recomendado)
+      honeypot = forms.CharField(
+          required=False,
+          widget=forms.HiddenInput,
+          label=''
+      )
+  
+      def clean_username(self):
+          username = self.cleaned_data['username']
+          if User.objects.filter(username=username).exists():
+              raise forms.ValidationError("El nombre de usuario ya existe.")
+          return username
+  
+      def clean_email(self):
+          email = self.cleaned_data['email']
+          if User.objects.filter(email=email).exists():
+              raise forms.ValidationError("Ya existe una cuenta con ese correo.")
+          return email
+  
+      def clean(self):
+          cleaned_data = super().clean()
+          password1 = cleaned_data.get('password1')
+          password2 = cleaned_data.get('password2')
+          if password1 and password2 and password1 != password2:
+              raise forms.ValidationError("Las contraseñas no coinciden.")
+          return cleaned_data
+  
+      def clean_honeypot(self):
+          """Valida que el campo honeypot esté vacío."""
+          if self.cleaned_data.get('honeypot'):
+              raise forms.ValidationError("Registro no permitido.")
+          return self.cleaned_data.get('honeypot')
+
+# Modificar la vista register para usar el formulario
+  from .forms import RegistroForm
+  from django.contrib import messages
+  from django_ratelimit.decorators import ratelimit
+  
+  
+  @ratelimit(key='ip', rate='5/m', method='POST', block=True)  # opcional
+  def register(request):
+      if request.method == 'POST':
+          form = RegistroForm(request.POST)
+          if form.is_valid():
+              # Datos limpios
+              username = form.cleaned_data['username']
+              email = form.cleaned_data['email']
+              password1 = form.cleaned_data['password1']
+              
+              # Crear usuario
+              user = User.objects.create_user(
+                  username=username,
+                  email=email,
+                  password=password1
+              )
+              
+              # Generar token y perfil
+              token = str(uuid.uuid4())
+              profile = Profile.objects.create(
+                  user=user,
+                  role='buyer',
+                  confirmed=False,
+                  token=token,
+                  confirmation_sent_at=timezone.now(),
+              )
+              
+              # Enviar correo
+              send_confirmation_email(user, token, request)
+              
+              # Redirigir a página de pendiente
+              return redirect('registration_pending')
+          else:
+              # Si el formulario tiene errores, los pasamos al template
+              return render(request, 'registration/register.html', {'form': form})
+      else:
+          form = RegistroForm()
+      
+      return render(request, 'registration/register.html', {'form': form})
